@@ -19,8 +19,6 @@ import json
 from selenium import webdriver
 
 
-
-
 SCOPES = ['https://www.googleapis.com/auth/calendar.readonly']
 MONTHS = ["january", "february", "march", "april", "may", "june","july", "august", "september","october","november", "december"]
 DAYS = ["monday", "tuesday", "wednesday", "thursday", "friday", "saturday", "sunday"]
@@ -199,7 +197,7 @@ for phrase in SEARCH_STRS:
         webbrowser.open(search_url)
 
 SEARCH_STRS = ["search on youtube","open on youtube"]
-#driver = webdriver.Chrome(r'C:\Users\Emrah\Desktop\PythonProjects\InstaBot\chromedriver.exe')
+#driver = webdriver.Chrome(r'your filepath')
 for phrase in SEARCH_STRS:
     if phrase in text:
         speak("what do you want me to search")
@@ -235,6 +233,6 @@ for phrase in SEARCH_STRS:
 A = ["open game"]
 for phrase in A:
     if phrase in text:
-        subprocess.call(r'C:\Program Files (x86)\Steam\steamapps\common\eFootball PES 2020\PES2020.exe')
+        subprocess.call(r'your filepath')
         
         
